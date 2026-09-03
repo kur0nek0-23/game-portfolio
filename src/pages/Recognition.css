@@ -1,0 +1,173 @@
+.rec__block {
+  margin-top: 56px;
+}
+
+.rec__heading {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.rec__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+.edu-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.edu-card__degree {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.edu-card__period {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-faint);
+  flex: none;
+}
+
+.edu-card__school {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.edu-card__note {
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+.jam-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.jam-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+.jam-card__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.jam-card__tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0a0a0c;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-weight: 700;
+}
+
+.jam-card__title {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.jam-card__project {
+  color: var(--text);
+  font-weight: 650;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.jam-card__outcome {
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+.ach__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ach-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ach-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+.ach-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #0a0a0c;
+  background: var(--success);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.ach-card__title {
+  font-size: 16px;
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+
+.ach-card__detail {
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+@media (max-width: 720px) {
+  .ach__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-card__head {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
