@@ -1,16 +1,16 @@
 :root {
-  --bg: #0a0a0c;
-  --bg-elevated: #111114;
-  --bg-card: #141418;
-  --border: #20202a;
-  --border-strong: #2c2c38;
-  --text: #e8e8ec;
-  --text-muted: #90909c;
-  --text-faint: #5c5c68;
-  --accent: #6f7cff;
-  --accent-strong: #8b96ff;
-  --accent-dim: rgba(111, 124, 255, 0.12);
-  --success: #34d399;
+  --bg: #000000;
+  --bg-elevated: #1F150C;
+  --bg-card: #1F150C;
+  --border: #412D15;
+  --border-strong: #573B1E;
+  --text: #E1DCC9;
+  --text-muted: #b8b3a4;
+  --text-faint: #7a7260;
+  --accent: #E1DCC9;
+  --accent-strong: #f0ece0;
+  --accent-dim: rgba(225, 220, 201, 0.1);
+  --success: #b8c97a;
 
   --sans: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;

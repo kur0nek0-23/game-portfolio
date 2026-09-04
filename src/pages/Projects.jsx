@@ -36,7 +36,7 @@ const projects = [
     title: 'Depth: Protocol',
     role: 'Solo Developer',
     event: 'Gamedev.js Game Jam 2026',
-    gradient: 'linear-gradient(135deg, #0b0e1a, #14213d, #1a3a5c)',
+    gradient: 'linear-gradient(135deg, #0a0a07, #1a150b, #2b200f)',
     description:
       'A real-time system-management horror game with modular pressure, power, and cooling systems, cascading failures, and node-based enemy AI.',
     badges: ['Unity', 'C#', 'Blender', 'Git'],
@@ -49,7 +49,7 @@ const projects = [
     title: "A Victim's Whisper",
     role: 'Gameplay Programmer',
     event: 'Final Year Major Project · Marwadi University',
-    gradient: 'linear-gradient(135deg, #1a0f12, #3d1322, #5c1f33)',
+    gradient: 'linear-gradient(135deg, #1a0f0a, #3d2412, #5c3316)',
     description:
       'Led gameplay programming, UI, SFX, and animation on a story-driven horror game. 100+ downloads and 31K YouTube views via a featured streamer; graded Outstanding (O).',
     badges: ['Unity', 'C#', 'Blender', 'GitHub'],
@@ -60,7 +60,7 @@ const projects = [
     title: 'a.m.',
     role: 'Solo Developer',
     event: 'Game Makers Myanmar 2025 Game Jam',
-    gradient: 'linear-gradient(135deg, #0c1410, #124028, #1f5c3d)',
+    gradient: 'linear-gradient(135deg, #0c0f0a, #222b11, #3d4115)',
     description:
       'A survival-horror demo built with a 4-person team. Ranked Top 10 overall and #1 for Gameplay & Execution; showcased at the Cultural & Creative Industries Forum 2025.',
     badges: ['Unity', 'C#', 'Blender', 'GitHub'],
