@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import flyToYourHeartBg from '../assets/images/flytoyourheart_banner.png'
 import depthProtocolBg from '../assets/images/depthprotocol_banner.png'
 import victimsWhisperBg from '../assets/images/avictimswhisper_banner.png'
-import amBg from '../assets/images/a.m._banner.png'
+import amBg from '../assets/images/a.m._banner.jpg'
 import './Projects.css'
 import './Pages.css'
 
