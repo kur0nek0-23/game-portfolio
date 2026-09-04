@@ -26,6 +26,22 @@
   line-height: 1.6;
 }
 
+[data-theme='light'] {
+  --bg: #f6f3eb;
+  --bg-elevated: #ffffff;
+  --bg-card: #ffffff;
+  --border: #e3d9c4;
+  --border-strong: #c7b795;
+  --text: #2b2117;
+  --text-muted: #6d6355;
+  --text-faint: #9b8f7b;
+  --accent: #4a3a24;
+  --accent-strong: #22190f;
+  --accent-dim: rgba(74, 58, 36, 0.08);
+  --success: #6f8432;
+  color-scheme: light;
+}
+
 *,
 *::before,
 *::after {

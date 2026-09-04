@@ -98,6 +98,10 @@
   font-weight: 700;
 }
 
+[data-theme='light'] .jam-card__tag {
+  color: #ffffff;
+}
+
 .jam-card__title {
   font-weight: 600;
   color: var(--text);
@@ -148,6 +152,10 @@
   background: var(--success);
   font-weight: 700;
   margin-bottom: 14px;
+}
+
+[data-theme='light'] .ach-card__badge {
+  color: #ffffff;
 }
 
 .ach-card__title {

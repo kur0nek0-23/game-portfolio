@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './Footer.css'
 
 function Footer() {
@@ -6,9 +5,6 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <p>© {new Date().getFullYear()} Min Zay Ya. Built with React.</p>
-        <Link to="/" className="footer__top">
-          Back to top ↑
-        </Link>
       </div>
     </footer>
   )

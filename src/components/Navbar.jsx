@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useTheme } from '../theme.jsx'
 import './Navbar.css'
 
 const links = [
@@ -14,6 +15,7 @@ const links = [
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -44,6 +46,15 @@ function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <button
+            type="button"
+            className="nav__theme"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+          >
+            {theme === 'dark' ? '☀' : '☾'}
+          </button>
           <NavLink to="/contact" className="nav__cta">
             Hire me
           </NavLink>
