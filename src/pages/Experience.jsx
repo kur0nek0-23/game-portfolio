@@ -35,7 +35,7 @@ const experience = [
   {
     role: 'Junior Unity Developer Intern',
     company: 'Colorful Animal Studio',
-    period: 'Oct 2025 – Present',
+    period: 'Oct 2025 – June 2026',
     type: 'Internship',
     points: [
       'Implement and refine core gameplay mechanics, animation systems, and interactive features in Unity (3D) and C#',
