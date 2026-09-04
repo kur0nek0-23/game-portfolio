@@ -57,14 +57,6 @@ const groups = [
   },
 ]
 
-const proficiency = [
-  { label: 'C# & .NET', level: 90 },
-  { label: 'Unity Gameplay Programming', level: 90 },
-  { label: 'ASP.NET Core / APIs', level: 85 },
-  { label: 'Gameplay & Level Design', level: 80 },
-  { label: 'Animation & Cinematics', level: 75 },
-]
-
 function Skills() {
   return (
     <section className="section page-section">
@@ -109,26 +101,6 @@ function Skills() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div className="skills__bars" variants={item}>
-            <h3 className="skills__bars-title">Proficiency</h3>
-            {proficiency.map((bar) => (
-              <div key={bar.label} className="bar">
-                <div className="bar__head">
-                  <span>{bar.label}</span>
-                  <code>{bar.level}%</code>
-                </div>
-                <div className="bar__track">
-                  <motion.div
-                    className="bar__fill"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${bar.level}%` }}
-                    transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                  />
-                </div>
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
 
         <motion.p

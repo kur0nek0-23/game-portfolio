@@ -4,10 +4,6 @@
 
 .skills {
   margin-top: 48px;
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 32px;
-  align-items: start;
 }
 
 .skills__grid {
@@ -66,64 +62,7 @@
   background: var(--accent);
 }
 
-.skills__bars {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  padding: 28px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  position: sticky;
-  top: 88px;
-}
-
-.skills__bars-title {
-  font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
-.bar__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: var(--text);
-}
-
-.bar__head code {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: var(--accent);
-}
-
-.bar__track {
-  height: 8px;
-  background: var(--border);
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.bar__fill {
-  height: 100%;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--success));
-}
-
 @media (max-width: 920px) {
-  .skills {
-    grid-template-columns: 1fr;
-  }
-
-  .skills__bars {
-    position: static;
-  }
-
   .page-section {
     padding-top: 100px;
   }
