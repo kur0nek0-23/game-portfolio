@@ -49,7 +49,7 @@ const aboutCards = [
 const stats = [
   { value: 'Top 10', label: 'Game Makers Myanmar 2025' },
   { value: '31K', label: 'YouTube views via streamer' },
-  { value: '2', label: 'Game jam titles shipped' },
+  { value: '4', label: 'Game jam titles shipped' },
   { value: '2', label: 'Professional roles' },
 ]
 

@@ -17,42 +17,68 @@ const item = {
   },
 }
 
-const groups = [
+const domains = [
   {
-    title: 'Programming Languages',
-    skills: ['C#', 'C++', 'Java', 'Python', 'JavaScript', 'HTML / CSS'],
-  },
-  {
-    title: 'Backend & Web',
-    skills: [
-      'ASP.NET Core',
-      'RESTful APIs',
-      'Entity Framework Core',
-      'Swagger / OpenAPI',
-      'React.js (basic)',
+    title: 'Backend & .NET Engineer',
+    blurb:
+      'Specialized in building scalable web APIs, data pipelines, and robust backend architectures.',
+    categories: [
+      {
+        label: 'Languages & Frameworks',
+        skills: ['C#', '.NET Core', 'ASP.NET Core'],
+      },
+      {
+        label: 'Database & ORM',
+        skills: ['SQL Server', 'PostgreSQL', 'Entity Framework Core'],
+      },
+      {
+        label: 'API Design',
+        skills: ['RESTful Architecture', 'Swagger / OpenAPI Documentation'],
+      },
+      {
+        label: 'Core Engineering',
+        skills: [
+          'Object-Oriented Programming (OOP)',
+          'Data Structures & Algorithms',
+        ],
+      },
     ],
   },
   {
-    title: 'Game Development',
-    skills: [
-      'Unity Engine',
-      'ProBuilder',
-      'Cinemachine',
-      'Timeline',
-      'Unity UI Toolkit',
-      'Blender',
+    title: 'Unity Game Developer',
+    blurb:
+      'Focused on gameplay mechanics, level layout, rapid prototyping, and dynamic camera systems.',
+    categories: [
+      {
+        label: 'Engine & Logic',
+        skills: ['Unity Engine', 'C# Gameplay Systems', 'Mechanics Prototyping'],
+      },
+      {
+        label: 'Level Design',
+        skills: ['ProBuilder', 'Cinemachine', 'Timeline'],
+      },
+      {
+        label: 'Interface & Assets',
+        skills: ['Unity UI Toolkit', 'Blender Asset Integration'],
+      },
+      {
+        label: 'UI/UX Design',
+        skills: ['Figma', 'Canva'],
+      },
     ],
   },
   {
-    title: 'Tools & Practices',
-    skills: [
-      'Git / GitHub',
-      'OOP',
-      'Data Structures & Algorithms',
-      'Visual Studio',
-      'VS Code',
-      'Figma',
-      'Canva',
+    title: 'Development Environment',
+    blurb: '',
+    categories: [
+      {
+        label: 'Version Control',
+        skills: ['Git', 'GitHub'],
+      },
+      {
+        label: 'IDEs',
+        skills: ['Visual Studio', 'VS Code'],
+      },
     ],
   },
 ]
@@ -74,8 +100,8 @@ function Skills() {
             What I work with
           </motion.h2>
           <motion.p variants={item} className="section-subtitle">
-            Technologies and practices across backend development, game
-            engineering, and creative tooling.
+            Backend engineering, game development, and the tools that power my
+            workflow.
           </motion.p>
         </motion.div>
 
@@ -85,22 +111,28 @@ function Skills() {
           initial="hidden"
           animate="show"
         >
-          <div className="skills__grid">
-            {groups.map((group) => (
-              <motion.div
-                key={group.title}
-                className="skill-card"
-                variants={item}
-              >
-                <h3 className="skill-card__title">{group.title}</h3>
-                <ul className="skill-card__list">
-                  {group.skills.map((skill) => (
-                    <li key={skill}>{skill}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
+          {domains.map((domain) => (
+            <motion.article key={domain.title} className="domain-card" variants={item}>
+              <header className="domain-card__head">
+                <h3 className="domain-card__title">{domain.title}</h3>
+                {domain.blurb && (
+                  <p className="domain-card__blurb">{domain.blurb}</p>
+                )}
+              </header>
+              <div className="domain-card__grid">
+                {domain.categories.map((category) => (
+                  <div key={category.label} className="domain-card__group">
+                    <h4 className="domain-card__label">{category.label}</h4>
+                    <ul className="domain-card__list">
+                      {category.skills.map((skill) => (
+                        <li key={skill}>{skill}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </motion.article>
+          ))}
         </motion.div>
 
         <motion.p
