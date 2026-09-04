@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
 import flyToYourHeartBg from '../assets/images/flytoyourheart_banner.png'
+import depthProtocolBg from '../assets/images/depthprotocol_banner.png'
+import victimsWhisperBg from '../assets/images/avictimswhisper_banner.png'
+import amBg from '../assets/images/a.m._banner.png'
 import './Projects.css'
 import './Pages.css'
 
@@ -36,7 +39,7 @@ const projects = [
     title: 'Depth: Protocol',
     role: 'Solo Developer',
     event: 'Gamedev.js Game Jam 2026',
-    gradient: 'linear-gradient(135deg, #0a0a07, #1a150b, #2b200f)',
+    image: depthProtocolBg,
     description:
       'A real-time system-management horror game with modular pressure, power, and cooling systems, cascading failures, and node-based enemy AI.',
     badges: ['Unity', 'C#', 'Blender', 'Git'],
@@ -49,7 +52,7 @@ const projects = [
     title: "A Victim's Whisper",
     role: 'Gameplay Programmer',
     event: 'Final Year Major Project · Marwadi University',
-    gradient: 'linear-gradient(135deg, #1a0f0a, #3d2412, #5c3316)',
+    image: victimsWhisperBg,
     description:
       'Led gameplay programming, UI, SFX, and animation on a story-driven horror game. 100+ downloads and 31K YouTube views via a featured streamer; graded Outstanding (O).',
     badges: ['Unity', 'C#', 'Blender', 'GitHub'],
@@ -60,7 +63,7 @@ const projects = [
     title: 'a.m.',
     role: 'Solo Developer',
     event: 'Game Makers Myanmar 2025 Game Jam',
-    gradient: 'linear-gradient(135deg, #0c0f0a, #222b11, #3d4115)',
+    image: amBg,
     description:
       'A survival-horror demo built with a 4-person team. Ranked Top 10 overall and #1 for Gameplay & Execution; showcased at the Cultural & Creative Industries Forum 2025.',
     badges: ['Unity', 'C#', 'Blender', 'GitHub'],
@@ -69,24 +72,9 @@ const projects = [
 ]
 
 function Cover({ project }) {
-  if (project.image) {
-    return (
-      <div className="proj-thumb proj-thumb--img">
-        <img src={project.image} alt={`${project.title} banner`} />
-        <div className="proj-thumb__scan" />
-      </div>
-    )
-  }
   return (
-    <div
-      className="proj-thumb"
-      style={{ background: project.gradient }}
-      role="img"
-      aria-label={`${project.title} cover art`}
-    >
-      <div className="proj-thumb__title">
-        <h3>{project.title}</h3>
-      </div>
+    <div className="proj-thumb proj-thumb--img">
+      <img src={project.image} alt={`${project.title} banner`} />
       <div className="proj-thumb__scan" />
     </div>
   )
@@ -132,9 +120,7 @@ function Projects() {
                   <span>{project.role}</span>
                   <span>{project.event}</span>
                 </div>
-                {!project.image && (
-                  <h3 className="proj-card__title">{project.title}</h3>
-                )}
+                <h3 className="proj-card__title">{project.title}</h3>
                 <p className="proj-card__desc">{project.description}</p>
                 <ul className="proj-card__tags">
                   {project.badges.map((badge) => (
